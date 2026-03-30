@@ -15,7 +15,7 @@ test.describe('Demo Blaze Home Page' , ()=>{
         await page.close();
     })
 
-    test('Should load Home page and show title', async({page})=>{
+    test('@ui Should load Home page and show title', async({page})=>{
         const title=  await page.title();
         console.log(title)
         expect(title).toBeTruthy();
@@ -25,7 +25,7 @@ test.describe('Demo Blaze Home Page' , ()=>{
 
     ////a[contains(text(), 'PRODUCT STORE')]
 
-    test('Should display main logo and header element', async({page})=>{
+    test('@ui Should display main logo and header element', async({page})=>{
 
         const logo=  page.locator('//a[contains(text(), "PRODUCT STORE")]')
         await expect(logo).toBeVisible();

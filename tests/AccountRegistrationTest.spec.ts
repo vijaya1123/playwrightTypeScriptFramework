@@ -28,7 +28,7 @@ test.afterEach(async({page})=>{
     await page.close();
 })
 
-test('User Registration  @master @regression', async({page})=>{
+test('@ui User Registration  @master @regression', async({page})=>{
     const currentitle= await page.title();
     console.log(currentitle)
     await expect(page).toHaveTitle('STORE')

@@ -47,7 +47,7 @@ test.afterEach(async({page})=>{
 });
 
 
-test('Logout Page Test Case', async({page})=>{
+test('@ui @sanity Logout Page Test Case', async({page})=>{
 
     await loginPage.clickLogin();
     await loginPage.setEmail(config.email)

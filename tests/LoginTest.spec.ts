@@ -29,7 +29,7 @@ test.afterEach(async({page})=>{
     await page.close();
 })
 
-test('Login Test' ,async()=>{
+test('@ui Login Test' ,async()=>{
      //Navigate to Login page via Home page
 
      await loginpage.clickLogin();

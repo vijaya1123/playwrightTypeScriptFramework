@@ -11,7 +11,7 @@ const jsondata=  "testdata/logindata.json"
 const jsonTestData=  DataProvider.getTestDataFromJson(jsondata)
 
 for(const data  of jsonTestData) {
-test(`Login Test with Json Test data ${data.testName} `, async({page})=>{
+test(`@ui Login Test with Json Test data ${data.testName} `, async({page})=>{
 
    const config= new TestConfig();
    await page.goto(config.appUrl)
@@ -48,7 +48,7 @@ const csvPath= "testdata/logindata.csv"
 const csvTestData= DataProvider.getTestDataFromCsv(csvPath)
 
 for(const data of csvTestData){
-    test(`Login Test with CSV Data Set ${data.testName} `, async({page})=>{
+    test(`@ui Login Test with CSV Data Set ${data.testName} `, async({page})=>{
 
         const config= new TestConfig();
         await page.goto(config.appUrl)

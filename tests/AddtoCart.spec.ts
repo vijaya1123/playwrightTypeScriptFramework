@@ -23,7 +23,7 @@ test.afterEach(async({page})=>{
     await page.close();
 })
 
-test('Add Product add to Cart', async({page})=>{
+test('@ui @sanity Add Product add to Cart', async({page})=>{
     await homePage.clickProduct();
         await page.waitForTimeout(4000)
     await productPage.addToCart();
