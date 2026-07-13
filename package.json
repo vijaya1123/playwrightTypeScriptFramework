@@ -6,7 +6,7 @@
      "test": "npx playwright test ",
     "test:headed": "npx playwright test --headed ",
    "test:ui": "npx playwright test --grep @ui --headed ",
-    "test:master": "playwright test --grep @master --headed",
+    "test:master": "npx playwright test --grep @master",
     "test:debug": "playwright test --grep @sanity --debug",
     "test:regression": "playwright test --grep @regression --headed ",
     "test:datadriven": "playwright test --grep @datadriven --headed ",
